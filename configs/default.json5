@@ -1,0 +1,65 @@
+{
+    basic: {
+        cuda: true,
+        save_path: './results', // path
+        batch_size: 1000,
+    },
+
+    data: {
+        data_dir: null,
+        min_df: 5,
+        max_vocab: 999999, // capacity for words including out of embedding words
+        max_len: 999, // large enough number, treated as unlimited
+        min_len: 1,
+        lower_case: true, // whether to treat the data and embedding as lowercase.
+        sort_by_len: false,
+   },
+
+    model: {
+        num_topics: 50,
+        rho_size: 300,
+        emb_size: 300,
+        t_hidden_size: 800,
+        theta_act: 'relu',
+        train_embeddings: true,
+    },
+
+    cl: {
+        cl: 1, // whether to enable contrastive learning or not
+        tau: 0.7, // temperature
+        label: 0, // whether to introduce data label or not
+    },
+
+    logging: {
+        log_file: 'log.txt',
+        log_interval: 2, // when to log training
+        visualize_every: 10, // when to visualize results
+        log_per_samples: 5120, //
+        summary_per_logs: 20,
+        tensorboard: true,
+    },
+
+    training: {
+        epochs: 1000,
+        optimizer: 'adam', // adam,
+        seed: 2021,
+        enc_drop: 0.0, // dropout
+        clip: 0.0, // grad_clipping
+        nonmono: 10,
+        weight_decay: 1.2e-6,
+        lr: 5e-3,
+        lr_factor: 0.4,
+        anneal_lr: 0,
+        bow_norm: true,
+    },
+
+    evaluation: {
+        eval_batch_size: 4096,
+        num_words: 10, // number of words for topic viz
+        load_from: '', // ckpt location
+        plot_type: -1, // the plot option: 2 - plot doc embedding distribution
+        type_num: 20, // number of classes for plotting
+        tc: false, // whether to compute topic coherence or not
+        td: false, // whether to compute topic diversity or not
+    },
+}

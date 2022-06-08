@@ -1,0 +1,11 @@
+[
+    {
+        name: 'benchmark',
+        __parents__: [
+            'default',
+            'cfg/webs',
+        ],
+        __repeat__: 1,
+        eval_file: 'test',
+    },
+]

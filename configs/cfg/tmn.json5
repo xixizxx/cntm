@@ -1,0 +1,7 @@
+{
+    dataset: 'tmn',
+    data_path: 'data/tmn',
+    output_dir: 'tmn',
+    emb_path: 'data/20ng_embeddings.txt',
+    type_num: 7,
+}

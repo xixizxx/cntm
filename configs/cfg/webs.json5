@@ -1,0 +1,7 @@
+{
+    dataset: 'webs',
+    data_path: 'data/webs',
+    output_dir: 'webs',
+    emb_path: 'data/20ng_embeddings.txt',
+    type_num: 8,
+}

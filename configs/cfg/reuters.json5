@@ -1,0 +1,12 @@
+{
+    dataset: 'reuters',
+    data_path: 'data/reuters',
+    output_dir: 'reuters',
+    emb_path: 'data/20ng_embeddings.txt',
+    type_num: 20,
+
+    load_from: 'results/reuters_k/cntm_reuters_epc_1000_K_50_CL_False_TAU_0.7_LABEL_False', // ckpt location
+    tc: true,
+    td: true,
+    plot_type: 2
+}

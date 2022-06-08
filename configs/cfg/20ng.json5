@@ -1,0 +1,13 @@
+{
+    dataset: '20ng',
+    data_path: 'data/20ng',
+    output_dir: '20ng',
+    emb_path: 'data/20ng_embeddings.txt',
+    type_num: 20,
+    epochs: 1000,
+
+    load_from: 'results/cntm_20ng_epc_1000_K_50_CL_False_TAU_0.7_LABEL_False', // ckpt location
+    tc: true,
+    td: true,
+    plot_type: 2,
+}
